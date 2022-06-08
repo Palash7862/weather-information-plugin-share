@@ -1,0 +1,890 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .chartAreaWrapperSun, .chartAreaWrapperMoon {
+     height: 170px;
+ }
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.widget-root .top-section {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0px;
+	min-width: 425px;
+}
+
+.top-section>div {
+    margin: 0 11px;
+}
+
+.airtemperature {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    align-content: center;
+}
+
+.airtemp {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.airtemperature img {
+	width: auto;
+	height: 45px !important;
+	display: block !important;
+	margin-left: 25px !important;
+	cursor: pointer;
+}
+
+.airtemplowhing img {
+    margin: 0 auto 35px !important;
+    max-width: 140px !important;
+}
+
+.airlowhigh {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.weather-button-seemore {
+    text-align: center !important;
+    margin: 35px 0 !important
+}
+
+.suninfo {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.sunrise {
+    text-align: left;
+    margin: 0 15px 10px;
+    display: block;
+}
+
+.suninfo img {
+    max-height: 45px;
+    margin-right: 10px;
+    margin-left: 0px !important;
+}
+
+.windspeed {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding: 13px 0 13px 0px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 0 15px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.wind img {
+    width: 20px;
+    margin-left: 10px !important;
+}
+
+.tidelowhigh {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    text-align: left;
+    letter-spacing: 0px;
+    line-height: 30px;
+    border-bottom: 1px solid;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.watertemp {
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 30px;
+    display: block;
+}
+
+.watertemp img {
+    width: 55px;
+    padding-right: 5px;
+    margin-left: 0px !important;
+}
+
+.locationdetails {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: -15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.locationdetails img {
+    width: 30px;
+    margin-top: -15px;
+    margin-left: 15px !important;
+}
+
+.weatherdetailsdiv .col-left,
+.weatherdetailsdiv .col-right,
+.weatherdetailsdiv .col-right>div {
+    text-align: center;
+}
+
+.weatherdetailsdiv .airtemplowhing img {
+    margin: 0 auto 35px !important;
+    max-width: 155px !important;
+}
+
+.weatherdetailsdiv .windspeed {
+    margin-bottom: 0;
+}
+
+.weatherdetailsdiv .tidelowhigh {
+    padding: 15px 0;
+    margin-bottom: 0;
+}
+
+.weatherdetailsdiv .watertemp {
+    margin: 0;
+    padding: 15px 0;
+    border-bottom: 1px solid;
+}
+
+.weatherdetailsdiv .prehudew {
+    padding: 15px 0;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 30px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: -20px;
+}
+
+.weatherdetailsdiv .alignleft {
+    text-align: left;
+    width: 250px;
+    margin: 0 auto;
+    padding-left: 55px;
+}
+
+
+.weatherdetailsdiv {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.weatherinfosection {
+    background: #f5f4f4;
+    border-radius: 24px;
+}
+
+.searchfield {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    padding-left: 50px;
+}
+
+.searchsection::before {
+    content: '';
+    background: url('https://www.knowwake.com/wp-content/uploads/2022/03/Search-Icon.png');
+    background-size: 25px;
+    position: absolute;
+    z-index: 9999;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    left: 35px;
+    top: 35px;
+}
+
+.searchsection::after {
+    content: '';
+    background: url('https://www.knowwake.com/wp-content/uploads/2022/03/Pin.png');
+    background-size: 15px;
+    position: absolute;
+    z-index: 9999;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    right: 35px;
+    top: 35px;
+}
+
+.weatherdetailsdiv .weatherinfosection {
+    margin-left: 0 !important;
+    position: relative;
+    margin-top: 0 !important;
+}
+
+.right-section {
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    margin-left: 1.4rem !important;
+}
+
+.calenderdate {
+    margin: 20px auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.calenderdate li {
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+    list-style: none;
+    margin: 4px;
+    width: 80px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 5px 5px !important;
+    font-size: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.calenderdate li .date {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: -10px;
+    display: inline-block;
+}
+
+.locationsection {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top:25px;
+}
+
+.locationsection .city-name {
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+.locationsection .tide-station {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.mapsection {
+    margin-bottom: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.activedate .date {
+    color: #1cb3f2;
+}
+
+.winddata.weatherinfosection {
+    font-size: 35px;
+    text-align: right;
+    padding: 30px;
+    font-family: 'Quicksand', sans-serif;
+    margin-bottom: 47px;
+}
+
+.winddata h2 {
+    font-size: 35px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    font-weight: normal;
+}
+
+.weathersettings,
+.weathersettingsupdate {
+    margin: 0 auto;
+    display: block;
+    padding: 12px 30px;
+    margin-bottom: 0px;
+    border: none;
+    background: #1cb3f2;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    border-radius: 10px;
+}
+
+.weathersettingsupdate {
+    width: calc(100% - 8px);
+    margin-top: 20px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+#popupsection {
+    max-width: 460px;
+    background: white;
+    padding: 25px 25px 0px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 20px;
+    position: relative;
+    display: table;
+}
+
+.switch {
+    background: #d0d0d0;
+    border-radius: 10px;
+    padding: 2px;
+    display: inline-block;
+}
+
+#popupsection label {
+    font-weight: 500;
+    font-family: 'Quicksand', sans-serif;
+    color: #6a6a6a;
+    font-size: 16px;
+}
+
+.switch li {
+    display: inline-block;
+    width: 90px;
+    margin: 2px;
+    font-weight: 300;
+    font-family: 'Quicksand', sans-serif;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.switch li.active {
+    display: inline-block;
+    background: white;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+.switch li:hover {
+    display: inline-block;
+    background: white;
+    border-radius: 7px;
+    margin: 2px;
+}
+
+.tideheigt,
+.swellheight,
+.temperature {
+    margin: 10px 0;
+}
+
+.windspeedpop {
+    margin-top: 30px;
+}
+
+.closebutton {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+.closebutton img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.chartWrapper {
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.chartWrapper::-webkit-scrollbar {
+    width: 4px;
+    /* width of the entire scrollbar */
+}
+
+.chartWrapper::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+.chartWrapper::-webkit-scrollbar-thumb {
+    background-color: #c2c2c2;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid transparent;
+    /* creates padding around scroll thumb */
+}
+
+.chartWrapper>canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+.chartAreaWrapper {
+    width: 1500px;
+    height: 217px;
+}
+
+.chartAreaWrapperTides{
+    height: 200px;
+}
+
+.chartWrapperSun,
+.chartWrapperMoon{
+    height: 170px;
+    padding-top:10px;
+    width: 100%;
+}
+
+
+#modal,
+#iconmodal {
+    position: fixed;
+    top: 25%;
+    z-index: 999999999999;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+#iconmodal {
+    position: fixed;
+    top: 10%;
+    z-index: 999999999;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#modal::before,
+#iconmodal::before {
+    background: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#popupsectionicontext {
+	max-width: 750px;
+	background: white;
+	padding: 25px 25px 0px;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 20px;
+	position: relative;
+	display: table;
+}
+
+
+div#mapName {
+	height: 155px;
+}
+
+.winddata.weatherinfosection.tides h2 {
+    text-align: right;
+}
+
+.sun-moon-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.sun-moon-info .startinfo,
+.sun-moon-info .endinfo {
+    text-align: center;
+}
+
+.option-button .switchsolunar {
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    border-radius: 25px;
+    overflow: hidden;
+    background: #d0d0d0;
+    display: flex;
+    text-align: center;
+}
+
+.option-button li {
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    width: 50%;
+    border-radius: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.option-button .active {
+    background: #1cb3f2 !important;
+    margin: 0 !important;
+    color: #fff;
+    border-radius: 0;
+}
+
+.right-section .winddata {
+    margin-bottom: 35px;
+}
+
+.winddata.weatherinfosection.solunar,
+.winddata.weatherinfosection.tides {
+    margin-top: 20px;
+}
+
+.winddata.weatherinfosection.solunar h2 {
+    text-align: right;
+}
+
+.winddata.weatherinfosection.precipitation {
+    margin-bottom: 0!important;
+}
+
+.weatherinfosection.w-full.items-center.m-3.p-6 {
+    margin-bottom: 25px!important;
+}
+
+.winddata.weatherinfosection.solunar {
+    margin-bottom: -20px;
+    position: relative;
+}
+
+.solunarmooninfo {
+	float: left;
+	width: 250px;
+	position: absolute;
+	left: 20px;
+	top: 30px;
+}
+
+.solunarmooninfo img {
+    width: 75px;
+    float: left;
+}
+
+.solunarmooninfo h3 {
+	text-align: left;
+	padding-left: 20px;
+	float: left;
+	width: 115px;
+	font-size: 20px;
+	padding-top: 12px;
+}
+
+#example-1 {
+	text-align: left;
+	padding: 10px;
+	height: 600px;
+	overflow-y: scroll;
+}
+
+#example-1 li {
+	list-style: none;
+	border-bottom: 1px solid #adadad;
+	margin-bottom: 30px;
+}
+
+.weatherdetailsdiv .airtemplowhing img {
+	max-height: 130px;
+}
+
+#example-1::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+#example-1::-webkit-scrollbar-track {
+    background: transparent;
+    /* color of the tracking area */
+}
+
+#example-1::-webkit-scrollbar-thumb {
+    background-color: #c2c2c2;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid transparent;
+    /* creates padding around scroll thumb */
+}
+
+.settingsicon {
+	position: absolute;
+	right: -10px;
+	top: -15px;
+}
+
+.settingsicon i {
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.locationdetails a:hover {
+	color: black;
+}
+
+#iconmodal .positionrelative > img {
+	width: 20px !important;
+	position: absolute;
+	z-index: 1;
+	top: 15px;
+	right: 70px;
+	cursor: pointer;
+}
+
+#urlcopied {
+	position: absolute;
+	right: 100px;
+	top: 20px;
+	z-index: 999;
+}
+
+.myClassyourClass{
+    overflow:hidden;
+}
+
+.positionrelative {
+	position: relative;
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    
+    .widget-root .top-section{
+        min-width:auto;
+    }
+
+    .col-left {
+        float: left;
+    }
+
+    .col-right {
+        float: right;
+    }
+
+    .airtemplowhing img {
+        margin: 0 auto 5px !important;
+        max-width: 70px !important;
+    }
+
+    .airlowhigh {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .sunrise {
+        margin: 0 0px 10px;
+    }
+
+    .windspeed {
+        clear: both;
+        text-align: center;
+        padding: 5px 0;
+        float: left;
+        width: 100%;
+    }
+
+    .windspeed {
+        clear: both;
+        text-align: center;
+        padding: 5px 0;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .wind img {
+        width: 12px;
+        margin-left: 10px !important;
+        margin-top: -5px;
+    }
+
+    .tidelowhigh {
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 0 0 15px;
+        margin: 0 auto 5px;
+    }
+
+    .watertemp {
+        float: left;
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+        border-bottom: 1px solid;
+        padding-bottom: 5px;
+    }
+
+    .locationdetails {
+        float: left;
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .locationdetails img {
+        width: 18px;
+        margin-top: -7px;
+        margin-left: 10px !important;
+    }
+
+    .weather-button-seemore {
+        float: left;
+        margin: 35px auto 5px !important;
+        width: 100%;
+    }
+
+    .weatherdetailsdiv {
+        max-width: 100%;
+    }
+    
+    .weatherdetailsdiv.flex.columns-2{
+        display:block;
+    }
+    
+    .weatherinfosection.w-full.items-center.m-3.p-6 {
+    	margin: 0 !important;
+    	padding-bottom: 0 !important;
+    	display: grid;
+    }
+    
+    .right-section {
+    	margin-right: 0 !important;
+    	margin-top: 0 !important;
+    	margin-left: 0 !important;
+    }
+
+    .weatherdetailsdiv .weatherinfosection {
+    	position: relative;
+    	width: 100%;
+    	margin: 30px 0 !important;
+    }
+    
+    .calenderdate li {
+    	width: 40px;
+    	font-size: 10px;
+    	border-radius:7px;
+    }
+    
+    .calenderdate li .date {
+    	font-size: 15px;
+    }
+    
+    .top-section {
+    	display: grid;
+    	text-align: center;
+    	margin-bottom: 30px;
+    }
+    
+    .prehudew {
+    	float: left;
+    }
+    
+    .option-button .switchsolunar {
+    	width: 130px;
+    }
+    
+    .option-button li {
+    	height: 35px;
+    }
+    
+    .solunarmooninfo h3 {
+    	text-align: left;
+    	padding-left: 20px;
+    	float: left;
+    	width: 108px;
+    	font-size: 16px;
+    	padding-top: 0;
+    }
+    
+    .solunarmooninfo img {
+    	width: 45px;
+    	float: left;
+    }
+    
+    .settingsicon {
+    	position: absolute;
+    	right: 0;
+    	top: 0;
+    }
+    
+    .switch li {
+    	display: inline-block;
+    	width: 70px;
+    	margin: 2px;
+    	font-weight: 300;
+    	font-family: 'Quicksand', sans-serif;
+    	padding: 5px 0;
+    	cursor: pointer;
+    }
+    
+    #iconmodal > img {
+    	width: 20px !important;
+    	position: absolute;
+    	z-index: 1;
+    	top: 15px;
+    	right: 15%;
+    }
+
+
+
+
+}
